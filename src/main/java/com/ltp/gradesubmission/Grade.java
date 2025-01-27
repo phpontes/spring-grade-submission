@@ -10,7 +10,8 @@ public class Grade {
 
     @NotBlank(message = "Subject is mandatory")
     private String subject;
-    
+
+    @Score(message = "Score must be a letter grade")
     private String score;
     private String id;
 
