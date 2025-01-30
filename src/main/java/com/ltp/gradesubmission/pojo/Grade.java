@@ -1,6 +1,9 @@
-package com.ltp.gradesubmission;
+package com.ltp.gradesubmission.pojo;
 
 import java.util.UUID;
+
+import com.ltp.gradesubmission.validation.Score;
+
 import jakarta.validation.constraints.NotBlank;
 
 public class Grade {
