@@ -25,8 +25,8 @@ public class GradeController {
         return "form";
     }
 
-    @PostMapping("/handleSubmit")
-    public String submitForm(@Valid Grade grade, BindingResult result) {
+    @PostMapping("/submitForm")
+    public String handleSubmit(@Valid Grade grade, BindingResult result) {
         System.out.println("Has errors?:" + result.hasErrors());
         if (result.hasErrors())
             return "form";
